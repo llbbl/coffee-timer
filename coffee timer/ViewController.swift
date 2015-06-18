@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var progress: UIProgressView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("view is loaded. ")
@@ -27,8 +32,23 @@ class ViewController: UIViewController {
 
     @IBAction func buttonWasPressed(sender: AnyObject) {
         println("button was pressed")
+        
+        let date = NSDate()
+        
+        //update the label
+        
+        label.text = "button pressed @ \(date)"
     }
 
+    @IBAction func sliderValueChanged(sender: AnyObject) {
+        
+        println("Slider value changed to \(self.slider.value)")
+        
+        //update our progreess view to match slider
+        
+        progress.progress = slider.value
+        
+    }
 
 }
 
