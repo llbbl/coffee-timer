@@ -15,17 +15,34 @@ class ViewController: UIViewController {
     @IBOutlet weak var progress: UIProgressView!
     
     
+    var timerModel: TimerModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("view is loaded. ")
         view.backgroundColor = .orangeColor()
         
         // Do any additional setup after loading the view, typically from a nib.
+        
+        setupModel()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func shouldAutorotate() -> Bool {
+        return false
+    }
+    
+    override func supportedInterfaceOrientations() -> Int {
+        return Int(UIInterfaceOrientationMask.Portrait.rawValue)
+    }
+    
+    func setupModel(){
+        timerModel = TimerModel(coffeeName: "Colombian Coffee", duration: 240)
+        
     }
 
     

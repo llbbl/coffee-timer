@@ -13,6 +13,7 @@
 		2CB5321C1B3320B900A116EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CB5321B1B3320B900A116EE /* Images.xcassets */; };
 		2CB5321F1B3320B900A116EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CB5321D1B3320B900A116EE /* LaunchScreen.xib */; };
 		2CB5322B1B3320B900A116EE /* coffee_timerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5322A1B3320B900A116EE /* coffee_timerTests.swift */; };
+		2CB532351B335F8400A116EE /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB532341B335F8400A116EE /* TimerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		2CB532241B3320B900A116EE /* coffee timerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coffee timerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CB532291B3320B900A116EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CB5322A1B3320B900A116EE /* coffee_timerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee_timerTests.swift; sourceTree = "<group>"; };
+		2CB532341B335F8400A116EE /* TimerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				2CB532141B3320B900A116EE /* AppDelegate.swift */,
 				2CB532161B3320B900A116EE /* ViewController.swift */,
 				2CB532181B3320B900A116EE /* Main.storyboard */,
+				2CB532341B335F8400A116EE /* TimerModel.swift */,
 				2CB5321B1B3320B900A116EE /* Images.xcassets */,
 				2CB5321D1B3320B900A116EE /* LaunchScreen.xib */,
 				2CB532121B3320B900A116EE /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB532351B335F8400A116EE /* TimerModel.swift in Sources */,
 				2CB532171B3320B900A116EE /* ViewController.swift in Sources */,
 				2CB532151B3320B900A116EE /* AppDelegate.swift in Sources */,
 			);
